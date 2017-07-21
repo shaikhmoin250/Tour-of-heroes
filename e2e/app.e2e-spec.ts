@@ -1,14 +1,14 @@
-import { AngularTourOfHeroesPage } from './app.po';
+import { Heros1Page } from './app.po';
 
-describe('angular-tour-of-heroes App', function() {
-  let page: AngularTourOfHeroesPage;
+describe('heros1 App', () => {
+  let page: Heros1Page;
 
   beforeEach(() => {
-    page = new AngularTourOfHeroesPage();
+    page = new Heros1Page();
   });
 
-  it('should display message saying app works', () => {
+  it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('app works!');
+    expect(page.getParagraphText()).toEqual('Welcome to app!!');
   });
 });
